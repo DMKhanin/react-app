@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Dropzone from 'react-dropzone'
 import { connect } from 'react-redux';
+import './file-loader.css';
 
 class FileLoader extends Component {
 
@@ -21,7 +22,6 @@ class FileLoader extends Component {
     }
 
     addPicture(acceptedFiles) {
-        console.log(acceptedFiles);
         acceptedFiles.forEach(file => {
             if (this.validateFile(file)) {
                 this.props.addPicture({

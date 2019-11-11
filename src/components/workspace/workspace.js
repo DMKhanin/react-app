@@ -28,8 +28,8 @@ export default class Workspace extends Component {
         return (
             <div className="workspace">
                 <div className={ this.props.drag ? 'workspace__field workspace__field--active' : 'workspace__field'} onMouseMove={ event => { this.mouseMove(event) } } ref={this.workspace}>
-                    { this.props.pictures.map((picture) => 
-                        <WorkspacePicture mouseMovePosition={ this.state.mouse } workspace={ this.workspace } picture={ picture }></WorkspacePicture>
+                    { this.props.pictures.map((picture, index) => 
+                        <WorkspacePicture key={ index } mouseMovePosition={ this.state.mouse } workspace={ this.workspace } picture={ picture }></WorkspacePicture>
                     )}
                 </div>
             </div>

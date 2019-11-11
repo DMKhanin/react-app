@@ -1,0 +1,14 @@
+.workspace-picture{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.workspace-picture:not(.workspace-picture--draggable) {
+    cursor: grab;
+}
+
+.workspace-picture.workspace-picture--draggable {
+    pointer-events: all;
+    cursor: grabbing;
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import './workspace-picture.css';
 
 class WorkspacePicture extends Component {
 

@@ -1,8 +1,3 @@
-
-* {
-    font-family: 'Poppins', sans-serif;
-}
-
 .application,
 #root,
 body,
@@ -30,19 +25,4 @@ html {
 .application__sitebar {
     background: var(--gray-color);
     height: 100%;
-}
-
-*::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-    background-color: rgba(0,0,0,0); /* or add it to the track */
-  }
-  
-*::-webkit-scrollbar-thumb {
-      background: var(--primary-color); 
-      border-radius: 4px;
-}
-
-*::-webkit-scrollbar-corner {
-    background: rgba(0,0,0,0);
 }
