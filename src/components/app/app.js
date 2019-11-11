@@ -12,7 +12,7 @@ class App extends Component {
             <div className="application">
                 <div className="application__row">
                     <div className="application__col">
-                        <div className="sitebar">
+                        <div className="application__sitebar">
                             <PictureList pictures={ this.props.pictures }></PictureList>
                             <FileLoader></FileLoader>
                         </div>

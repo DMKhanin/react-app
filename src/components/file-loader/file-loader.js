@@ -11,12 +11,24 @@ class FileLoader extends Component {
         }
     }
 
+    validateFile(file) {
+        if (file.type === 'image/svg+xml' ||
+            file.type === 'image/png' ||
+            file.type === 'image/jpeg') {
+            return true;
+        }
+        return false;
+    }
+
     addPicture(acceptedFiles) {
+        console.log(acceptedFiles);
         acceptedFiles.forEach(file => {
-            this.props.addPicture({
-                name: file.name,
-                data: URL.createObjectURL(file)
-            });
+            if (this.validateFile(file)) {
+                this.props.addPicture({
+                    name: file.name,
+                    data: URL.createObjectURL(file)
+                });
+            };
         })
     }
 

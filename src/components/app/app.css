@@ -27,7 +27,7 @@ html {
     width: calc(100% - 400px);
 }
 
-.sitebar {
+.application__sitebar {
     background: var(--gray-color);
     height: 100%;
 }
