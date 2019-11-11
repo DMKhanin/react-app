@@ -1,0 +1,33 @@
+.workspace {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.workspace__field {
+    margin: 60px;
+    width: calc(100% - 120px);
+    height: calc(100% - 120px);
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.workspace-picture{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.workspace__field--active .workspace-picture{
+    pointer-events: none;
+}
+
+.workspace-picture:not(.workspace-picture--draggable) {
+    cursor: grab;
+}
+
+.workspace-picture.workspace-picture--draggable {
+    pointer-events: all;
+    cursor: grabbing;
+}
